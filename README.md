@@ -1,11 +1,17 @@
 # Asp.Net Core 8 Google Authentication 示例
 
-此仓库展示了如何在Asp.Net Core 8应用程序中集成Google身份验证，以获取`accessToken`和`refreshToken`。
+此仓库展示了如何在Asp.Net Core 8应用程序中集成Google身份验证，设置Scope以获取`accessToken`和`refreshToken`。
 
 ## 功能特性
 
 - 与Google OAuth 2.0集成，实现安全的用户体验验证。
 - 设置Scope，获取accessToken，refreshToken从而访问操作譬如Google Sheets服务等
+
+## ## 开发环境
+
+- Asp.Net Core 8 WebApi
+
+- Microsoft.AspNetCore.Authentication.Google 8.0.4
 
 ## 先决条件
 
