@@ -7,7 +7,7 @@
 - 与Google OAuth 2.0集成，实现安全的用户体验验证。
 - 设置Scope，获取accessToken，refreshToken从而访问操作譬如Google Sheets服务等
 
-## ## 开发环境
+## 开发环境
 
 - Asp.Net Core 8 WebApi
 
