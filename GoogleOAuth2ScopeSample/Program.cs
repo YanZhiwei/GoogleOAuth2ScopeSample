@@ -19,7 +19,7 @@ public class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        builder.Services.AddAuthentication().AddGoogleScope("https://www.googleapis.com/auth/spreadsheets",
+        builder.Services.AddAuthentication().AddGoogleScope(builder.Configuration.GetSection("Authentication"),"https://www.googleapis.com/auth/spreadsheets",
             "https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email");
         var app = builder.Build();
 
