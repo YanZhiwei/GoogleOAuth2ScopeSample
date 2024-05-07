@@ -1,0 +1,6 @@
+@GoogleOAuth2ScopeSample_HostAddress = http://localhost:5246
+
+GET {{GoogleOAuth2ScopeSample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

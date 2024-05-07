@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google OAuth Sample</title>
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="https://localhost:5001/Account/GoogleLogin/"
+      target="print_popup"
+      onsubmit="window.open('about:blank','print_popup','width=1000,height=800');"
+    >
+      <button type="submit" title="Login using Google">
+        Login using Google
+      </button>
+    </form>
+  </body>
+</html>
