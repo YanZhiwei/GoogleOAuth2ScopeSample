@@ -14,13 +14,7 @@
 
 ## 功能演示
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="IMAGE_URL">
-    <source src="screenshots/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</figure>
-
+![](screenshots/demo.gif)
 ![](screenshots/3.png)
 ![](screenshots/2.png)
 
