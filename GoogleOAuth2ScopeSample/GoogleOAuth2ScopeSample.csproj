@@ -22,6 +22,17 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+		<PackageReference Include="Tenon.AspNetCore.Authentication.Google.Extensions" Version="0.0.1-alpha-202405081356" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Tenon.AspNetCore.Authentication.Google.Extensions">
+	    <HintPath>D:\Repos\YanZhiwei\Mortise-Tenon\src\Extensions\Tenon.AspNetCore.Authentication.Google.Extensions\bin\Debug\net8.0\Tenon.AspNetCore.Authentication.Google.Extensions.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="GoogleSheetsPythonScripts\" />
 	</ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
 using GoogleOAuth2ScopeSample.Entities;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +25,7 @@ public class AccountController : ControllerBase
     public IActionResult GoogleLogin()
     {
         var redirectUrl = Url.Action("GoogleResponse", "Account");
-        var properties = _signInManager.ConfigureExternalAuthenticationProperties("Google", redirectUrl);
+        var properties = _signInManager.ConfigureExternalAuthenticationProperties(GoogleDefaults.AuthenticationScheme, redirectUrl);
         return new ChallengeResult("Google", properties);
     }
 
