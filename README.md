@@ -47,15 +47,15 @@
    - 在应用程序配置文件中设置您的`ClientId`和`ClientSecret`。
      
      ```
-  "Authentication": {
-    "Google": {
-      "ClientId": "YOUR_GOOGLE_CLIENT_ID",
-      "ClientSecret": "YOUR_GOOGLE_CLIENT_SECRET",
-      "Prompt": "consent",
-      "AccessType": "offline",
-      "Scope": [ "https://www.googleapis.com/auth/spreadsheets" ]
-    }
-  }
+       "Authentication": {
+         "Google": {
+           "ClientId": "YOUR_GOOGLE_CLIENT_ID",
+           "ClientSecret": "YOUR_GOOGLE_CLIENT_SECRET",
+           "Prompt": "consent",
+           "AccessType": "offline",
+           "Scope": [ "https://www.googleapis.com/auth/spreadsheets" ]
+         }
+       }
      ```
 
 4. **运行应用程序**
