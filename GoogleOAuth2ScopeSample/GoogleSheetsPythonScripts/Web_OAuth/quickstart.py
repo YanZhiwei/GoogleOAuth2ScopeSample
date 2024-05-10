@@ -5,9 +5,14 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+import gspread
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://spreadsheets.google.com/feeds",
+    "https://www.googleapis.com/auth/drive",
+]
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = "1Jpfb9sOoWlPR_DhW4mSPHd7WI3jgh0GV7S3172IyryY"
@@ -37,6 +42,13 @@ def main():
             creds = flow.run_local_server(port=0)
 
     try:
+        # gspread library to access google sheet
+        # https://stackoverflow.com/questions/49258566/gspread-authentication-throwing-insufficient-permission
+        gc = gspread.authorize(creds)
+        sheet = gc.open("test")
+        wks = sheet.sheet1
+        print(wks.get_all_records())
+        # end of gspread
         sheetid = create(creds, "mysheet2")
         update_values(
             creds,
